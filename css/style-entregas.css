@@ -1,0 +1,11 @@
+* {
+    font-family: 'Fraunces', serif;
+    color: rgb(34, 183, 126);
+}
+body {
+    background-color:#f4ebf5;}
+
+    h1 {
+        color-interpolation-filters: auto;}
+
+        

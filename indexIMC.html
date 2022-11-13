@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\mainIMC.css">
+    <script src="js\scriptIMC.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">  
+        <h1>BMI Calculator</h1>
+        <label>
+            <input id="h-input" type="number" placeholder="Ingrese altura en Cm: ">
+        </label>        
+        <label>
+            <input id="w-input" type="number" placeholder="Ingrese peso en Kg: ">
+        </label>            
+        <button onclick="Calculate()">Calcular IMC</button>
+            
+        <div class="bmi-value">
+            <h4>Valor IMC: </h4>
+            <div id="bmi-output"></div>
+        </div>
+        <div class="status">
+            <h4>Estado: </h4>
+            <div id="bmi-status"></div>
+        </div>   
+    </div>
+    
+</body>
+</html>

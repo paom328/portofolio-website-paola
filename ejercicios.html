@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta lang="en">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="shortcut icon" href="images/Iconslogo/rsz_logo_1-150x150.png" />
+        <link href="css/blog.css" type="text/css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+
+        <style>
+          .toggle{
+              height: 0px;
+              background-color: #2e2e2e;
+          }
+          #open{
+              color: rgb(226, 231, 230);
+          }
+          @media only screen and (max-width: 800px){
+              .toggle{
+                  height: 50px;
+              }
+              
+          }
+        </style>
+     </head>
+    
+  <body>
+    <div class="toggle">
+      <span style="font-size:40px;cursor:pointer;margin-left: 10px;" onclick="openNav()" id="open">&#9776; 
+      </span>
+      <div id="myNav" class="navbar" style="background-color: rgba(0,0,0,0.9);">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close">&times;</a>
+        <div class="navbar-content">
+          <a href="home.html">Home</a>
+          <a href="resume.html">CV</a>
+          <a href="blog.html" >Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="entregas.html">Projects</a>
+          <a href="ejercicios.html"id="active">Exercises</a>          
+        </div>
+      </div>
+      <div class="Exercises">
+        <h1 style="color:rgb(53, 13, 105); position: relative; left: 20%;"><span style="color: darkorange; text-decoration: underline">E</span>xercises</h1>
+         <div class="Exercises-main">
+          <div class="main-part" id="main">
+            <div class="cont-img" id="coimg">
+            </div>
+            <div class="cont-text">
+              <div  class="blog-header">
+              <span class="social-icons">
+                  
+                   <a href="https://www.facebook.com/pao.m.328" target="_blank"><img src="images/Iconslogo/facebook-32.png" class="fa-facebook"></a>
+                   
+                   <a href="https://twitter.com/paolita328" target="_blank"><img src="images/Iconslogo/twitter-32.png" class="fa-twitter"></a>
+                   
+                   <a href="https://www.linkedin.com/in/paola-mendoza-quiroz-6b86a633/" target="_blank"><img src="images/Iconslogo/linkedin-32.png" class="fa-linkedin"></a>
+                   
+               </span>
+               <h1>EJERCICIOS CLASE 14</h1>
+               <hr style="clear: both; height: 6px; background-color: #101010">
+              </div>
+                <p>
+                  <b><span class="h2">
+                    <ol>
+                      <li>
+                          <p>
+                            <a href="ejercicios\Ejercicio 1\index.html"> Ejercicio 1</a>.
+                          </p>
+                      </li>
+                      <li>
+                          <p>
+                            <a href="ejercicios\Ejercicio 2\index.html"> Ejercicio 2</a>.
+                          </p>
+                      </li>
+                      <li>
+                          <p>
+                            <a href="ejercicios\Ejercicio 3\index.html"> Ejercicio 3</a>.
+                          </p>
+                      </li>
+                      <li>
+                          <p>
+                            <a href="ejercicios\Ejercicio 4\index.html"> Ejercicio 4</a>.
+                          </p>
+                      </li>
+                      <li>
+                          <p>
+                            <a href="ejercicios\Ejercicio 5\index.html"> Ejercicio 5</a>.
+                          </p>
+                      </li>
+                      <li>
+                          <p>
+                            <a href="ejercicios\Ejercicio 6\index.html"> Ejercicio 6</a>.
+                          </p>
+                      </li>
+                      <li>
+                          <p>
+                            <a href="ejercicios\Ejercicio 7\index.html"> Ejercicio 7</a>.
+                          </p>
+                      </li>
+                      <li>
+                          <p>
+                            <a href="ejercicios\Ejercicio 8\index.html"> Ejercicio 8</a>.
+                          </p>
+                      </li>
+                      <li>
+                          <p>
+                            <a href="ejercicios\Ejercicio 9\index.html"> Ejercicio 9</a>.
+                          </p>
+                      </li>
+                      <li>
+                          <p>
+                            <a href="ejercicios\Ejercicio10\index.html"> Ejercicio 10</a>.
+                          </p>
+                      </li>                   
+                      <li>
+                          <p>
+                            <a href="ejercicios\Ejercicio10\index.html"> Ejercicio 10</a>.
+                          </p>
+                      </li>                   
+
+                </span>
+              </p>
+              <p>
+                
+              </p>
+            </div>
+         </div>
+        </div>
+      </div>
+
+      <!--Copyright Information-->
+      <div class="copyright">
+        <p>&copy; 2022 <a href="https://youtu.be/gPCCYMeXin0?list=RDMM">Paola Mendoza</a></p>
+      </div>
+      <script>
+        function myFunction() 
+        {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+            var main = document.getElementById("main");
+            var coimg = document.getElementById("coimg");
+          if (dots.style.display === "none") 
+          {
+              dots.style.display = "inline";
+              btnText.innerHTML = "Read more";
+              moreText.style.display = "none";
+              main.style.display = "flex";
+              coimg.style.width = "350px";
+
+                          
+          } 
+          else {
+              dots.style.display = "none";
+              btnText.innerHTML = "Read less";
+              moreText.style.display = "inline";
+              main.style.display = "block";
+              coimg.style.width = "100%";
+              coimg.style.transition = "all 1s";
+            }
+        }
+      </script>
+      <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta lang="en">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="shortcut icon" href="images/Iconslogo/rsz_logo_1-150x150.png" />
+        <link href="css/blog.css" type="text/css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <style>
+        .toggle{
+            height: 0px;
+            background-color: #2e2e2e;
+        }
+        #open{
+            color: aliceblue;
+        }
+        @media only screen and (max-width: 800px){
+            .toggle{
+                height: 50px;
+            }
+            
+        }
+    </style>
+    </head>
+    <body>
+        <div class="toggle">
+            <span style="font-size:40px;cursor:pointer;margin-left: 10px;" onclick="openNav()" id="open">&#9776; </span>
+        </div>
+        <div id="myNav" class="navbar" style="background-color: rgba(0,0,0,0.9);">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close">&times;</a>
+          <div class="navbar-content">
+            <a href="home.html">Home</a>
+            <a href="resume.html">CV</a>
+            <a href="blog.html" id="active">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="entregas.html">Projects</a>
+            <a href="ejercicios.html">Exercises</a>
+          </div>
+        </div>
+        <div class="blog">
+           <h1 style="color:rgb(53, 13, 105); position: relative; left: 20%;"><span style="color: darkorange; text-decoration: underline">B</span>log</h1>
+            <div class="blog-main">
+            <div class="main-part" id="main">
+               <div class="cont-img" id="coimg">
+               </div>
+               <div class="cont-text">
+                 <div  class="blog-header">
+                 <span class="social-icons">
+                     
+                      <a href="https://www.facebook.com/pao.m.328" target="_blank"><img src="images/Iconslogo/facebook-32.png" class="fa-facebook"></a>
+                      
+                      <a href="https://twitter.com/paolita328" target="_blank"><img src="images/Iconslogo/twitter-32.png" class="fa-twitter"></a>
+                      
+                      <a href="https://www.linkedin.com/in/paola-mendoza-quiroz-6b86a633/" target="_blank"><img src="images/Iconslogo/linkedin-32.png" class="fa-linkedin"></a>
+                      
+                  </span>
+                  Consultas
+                  <hr style="clear: both; height: 3px; background-color: #101010">
+                 </div>
+                   <p><b><span class="h2">¿Qué es el Protocolo de Internet?</span></b><br>El Protocolo de Internet (IP) es un protocolo, o conjunto de reglas, para enrutar y direccionar paquetes de datos para que puedan viajar a través de las redes y llegar al destino correcto. Los datos que atraviesan Internet se dividen en trozos más pequeños, llamados paquetes. La información IP se adjunta a cada paquete, y esta información ayuda a los enrutadores a enviar los paquetes al lugar correcto. A cada dispositivo o dominio que se conecta a Internet se le asigna una dirección IP, y a medida que los paquetes se dirigen a la dirección IP adjunta, los datos llegan a donde se necesitan. Una vez que los paquetes llegan a su destino, se manejan de forma diferente en función del protocolo de transporte que se utilice en combinación con IP. Los protocolos de transporte más comunes son TCP y UDP. Fuente: https://www.cloudflare.com/es-es/learning/network-layer/internetprotocol/#:~:text=El%20Protocolo%20de%20Internet%20(IP,y%20llegar%20al%20destino%20correcto.
+                       <br><b><span class="h2">Protocolo de control de transmisión (TCP)</span></b><br>
+                       El Protocolo de control de transmisiones (TCP) es un protocolo de transporte que se usa sobre IP para asegurar transmisión confiable de paquetes. TCP incluye mecanismos para resolver muchos de los problemas que surgen en la mensajería basada en paquetes, tales como paquetes perdidos, paquetes fuera de orden, paquetes duplicados y paquetes corruptos. Dado que TCP es el protocolo usado más comúnmente sobre IP, la pila del protocolo de Internet a veces se denomina TCP/IP. Al enviar paquetes usando TCP/IP, la porción de datos de cada paquete IP está formateada como un segmento TCP. Cada segmento TCP contiene un encabezado y datos. El encabezado TCP contiene muchos más campos que el encabezado UDP y puede variar en tamaño de 202020 a 606060 bytes, dependiendo del tamaño del campo de opciones. El encabezado TCP comparte algunos campos con el encabezado UDP: número de puerto de origen, número de puerto de destino, y suma de control. Para recordar cómo se utilizan estos, revisa el artículo UDP. Fuente: https://es.khanacademy.org/computing/ap-computer-science-principles/the- internet/x2d2f703b37b450a3:transporting-packets/a/transmission-control-protocol--tcp                       
+                       <br><b><span class="h2">Protocolo FTP (File Transfer Protocol)</span></b><br>
+                       Grosso modo, podemos decir que se trata de un protocolo de transferencia de archivos; al conectarnos a un servidor podemos crear una conexión de datos para, por ejemplo, descargar archivos. El protocolo FTP facilita el acceso a archivos que se encuentran en sistemas remotos a través de simples comandos. Tiene múltiples funciones siendo la transferencia de archivos la principal, tal y como su nombre indica. Para este intercambio de archivos entre dispositivos que estén conectados se usa una red con protocolo TCP (Transmission Control Protocol), que es otro de los protocolos esenciales en internet. Dentro de la red TCP, FTP recurre a la arquitectura cliente-servidor, además del uso de múltiples puertos para poder funcionar. Fuente: https://linube.com/blog/que-es-protocolo-ftp/                       
+                       <br><b><span class="h2">Protocolo HTTP (Hypertext Transfer Protocol)</span></b><br>
+                       HTTP, de sus siglas en inglés: "Hypertext Transfer Protocol", es el nombre de un protocolo el cual nos permite realizar una petición de datos y recursos, como pueden ser documentos HTML. Es la base de cualquier intercambio de datos en la Web, y un protocolo de estructura cliente-servidor, esto quiere decir que una petición de datos es iniciada por el elemento que recibirá los datos (el cliente), normalmente un navegador Web. Así, una página web completa resulta de la unión de distintos sub- documentos recibidos, como, por ejemplo: un documento que especifique el estilo de maquetación de la página web (CSS), el texto, las imágenes, vídeos, scripts, etc... Fuente: https://developer.mozilla.org/es/docs/Web/HTTP/Overview
+                       <br><b><span class="h2">Protocolo UDP (User Datagram Protocol)</span></b><br>
+                       El Protocolo de datagrama de usuarios, o UDP, es un protocolo de comunicación que se utiliza en Internet para transmisiones sujetas a limitaciones temporales, como la reproducción de vídeo o las búsquedas en DNS. Acelera las comunicaciones al no establecer formalmente una conexión antes de transferir los datos. Esto permite que los datos se transfieran muy rápido, pero también puede hacer que los paquetes se pierdan en tránsito, y crear oportunidades para vulnerabilidades en forma de ataques DDoS. Fuente: https://www.cloudflare.com/es-es/learning/ddos/glossary/user-datagram-protocol-udp/
+                       <br><b><span class="h2">Protocolo TELNET</span></b><br>
+                       TELNET es un protocolo estándar siendo su número STD de 8. Su status es recomendado. Se describe en el RFC 854 - Especificaciones del protocolo TELNET y RFC 855 - "TELNET Option Specifications". El protocolo TELNET proporciona una interfaz estandarizada, a través de la cual un programa de un host(el cliente de TELNET) puede acceder a los recursos de otro host (el servidor de TELNET) como si el cliente fuera una terminal local conectada al servidor. Por ejemplo, un usuario de una estación de trabajo situada en una LAN se puede conectar al host. Por supuesto, TELNET se puede usar tanto en LANs como en WANs. Fuente: https://neo.lcc.uma.es/evirtual/cdd/tutorial/aplicacion/telnet.html
+                       <br><b><span class="h2">Protocolo simple de transferencia de correo (SMTP)</span></b><br>
+                       Es un estándar técnico para la transmisión de correo electrónico a través de una red. Al igual que otros protocolos de red, SMTP permite a los ordenadores (computadoras) y servidores intercambiar datos independientemente de su hardware o software subyacente. Al igual que el uso de una forma estandarizada de escribir una dirección en un sobre permite el funcionamiento del servicio postal, el protocolo SMTP estandariza la forma en que el correo electrónico viaja del remitente al destinatario, permitiendo la entrega generalizada de correo electrónico. SMTP es un protocolo de entrega de correo, no un protocolo de recuperación de correo. Un servicio postal entrega el correo en un buzón, pero el destinatario tiene que recuperar el correo del buzón. Del mismo modo, el protocolo SMTP entrega un correo electrónico al servidor de correo de un proveedor de correo electrónico, pero se utilizan protocolos independientes para recuperarlo del servidor de correo para que el destinatario pueda leerlo. Fuente: https://www.cloudflare.com/es-es/learning/email-security/what-is-smtp/
+                       <br><b><span class="h2">Protocolo de transferencia de hipertexto seguro (HTTPS)</span></b><br>
+                       Protocolo de transferencia de hipertexto seguro (HTTPS) es una versión segura del protocolo HTTP que utiliza el SSL /TLS protocolo para cifrado y autenticación. HTTPS está especificado por RFC 2818 (Mayo de 2000) y utiliza el puerto 443 de forma predeterminada en lugar del puerto 80 de HTTP. El protocolo HTTPS hace posible que los usuarios del sitio web transmitan datos confidenciales como números de tarjetas de crédito, información bancaria y credenciales de inicio de sesión de forma segura a través de Internet. Por esta razón, HTTPS es especialmente importante para asegurar actividades en línea como compras, banca y trabajo remoto. Sin embargo, HTTPS se está convirtiendo rápidamente en el protocolo estándar para todos los sitios web, ya sea que intercambien o no datos confidenciales con los usuarios. Fuente: https://www.ssl.com/es/preguntas-frecuentes/que-es-https/
+                       <br><b><span class="h2">Protocolo Post Office (POP)</span></b><br>
+                       En un entorno informático, cuando hablamos de POP (Post Office Protocol), nos referimos a un tipo de protocolo usado para conseguir los correos electrónicos guardados en un servidor remoto cuyo nombre es servidor POP. Por tanto, la mayoría de las aplicaciones de correo electrónico utilizan este protocolo. La versión más reciente es la POP3. Este tipo de protocolo pertenece a la capa de aplicación del modelo OSI (Open System Interconnection) y da a los usuarios finales la oportunidad de buscar y recibir correo electrónico. Junto al protocolo POP3, SMTP (Protocolo Simple de Transferencia de Correo) es otro de los protocolos más utilizados. Existe un protocolo alternativo a POP3 llamado IMAP (Internet Message Access Protocol) con distintas ventajas y desventajas sobre este. Fuente: https://www.kyoceradocumentsolutions.es/es/smarter-workspaces/business- challenges/paperless/la-seguridad-en-un-servidor-pop.html
+                       <br><b><span class="h2">Protocolo de resolución de direcciones (ARP)</span></b><br>
+                       ARP (Protocolo de resolución de direcciones) es un protocolo de red que se utiliza para averiguar la dirección de hardware (MAC) de un dispositivo a partir de una dirección IP. Se utiliza cuando un dispositivo quiere comunicarse con algún otro dispositivo en una red local (por ejemplo, en una red Ethernet que requiere que se conozcan las direcciones físicas antes de enviar paquetes). El dispositivo de envío utiliza ARP para traducir direcciones IP a direcciones MAC. El dispositivo envía un mensaje de solicitud ARP que contiene la dirección IP del dispositivo receptor. Todos los dispositivos en un segmento de red local ven el mensaje, pero solo el dispositivo que tiene esa dirección IP responde con el mensaje de respuesta ARP que contiene su dirección MAC. El dispositivo emisor ahora tiene suficiente información para enviar el paquete al dispositivo receptor. Los paquetes de solicitud ARP se envían a las direcciones de difusión (FF:FF:FF:FF:FF:FF para las difusiones de Ethernet y 255.255.255.255 para la difusión de IP). Fuente: https://study-ccna.com/arp/
+                       <br><b><span class="h2">Protocolo IMAP</span></b><br>
+                       IMAP son las siglas de Internet Message Access Protocol. En español lo podemos traducir como Protocolo de acceso a mensajes de Internet. Permite acceder a los mensajes que hay almacenados en un determinado servidor. Simplemente es necesario contar con un equipo que tenga acceso a Internet y poder entrar a ese servidor. Este protocolo no permite enviar correos. Lo que hace realmente es dar acceso a los mensajes que hay almacenados en ese servidor. Tiene una ventaja frente a otros protocolos similares y es que IMAP permite visualizar el contenido en ese servidor sin necesidad de descargarlo. De esta forma, un usuario puede acceder desde un ordenador a un servidor, ver los mensajes y no tener que bajarlos a su propio equipo. Fue creado en el año 1986 y llegó como sustituto del protocolo POP. Desde entonces han aparecido diferentes versiones que han mejorado el protocolo y han permitido nuevas funciones a los usuarios. La primera de ellas fue IMAP 2, que surgió solo un par de años después y ya fue distribuida de forma pública. Posteriormente aparecieron otras versiones como IMAP 3, IMAP2 bis o IMAP 4. Por tanto, podemos decir que gracias al protocolo IMAP los correos electrónicos se pueden sincronizar entre un equipo y un servidor. Permite crear diferentes carpetas y almacenarlos allí. Esto nos permite acceder al contenido guardado desde cualquier dispositivo que tenga acceso a Internet. Fuente: https://www.redeszone.net/tutoriales/internet/que-es-protocolo-imap/ 
+                       <br><b><span class="h2">DNS</span></b><br>
+                       El sistema de nombres de dominio (DNS) es el directorio telefónico de Internet. Las personas acceden a la información en línea a través de nombres de dominio como nytimes.com o espn.com. Los navegadores web interactúan mediante direcciones de Protocolo de Internet (IP). El DNS traduce los nombres de dominio a direcciones IP para que los navegadores puedan cargar los recursos de Internet.Cada dispositivo conectado a Internet tiene una dirección IP única que otros equipos pueden usar para encontrarlo. Los servidores DNS suprimen la necesidad de que los humanos memoricen direcciones IP tales como 192.168.1.1 (en IPv4) o nuevas direcciones IP alfanuméricas más complejas, tales como 2400:cb00:2048:1::c629:d7a2 (en IPv6). Fuente: https://www.cloudflare.com/es-es/learning/dns/what-is-dns/
+                       <br><b><span class="h2">CDN</span></b><br>
+                       Una red de entrega de contenido (CDN) está formada por un grupo de servidores distribuidos geográficamente que trabajan juntos para ofrecer una entrega rápida de contenido de Internet. Una CDN permite la transferencia rápida de activos necesarios para cargar contenido de Internet, incluidas páginas HTML, archivos javascript, hojas de estilo, imágenes y vídeos. La popularidad de los servicios de CDN sigue creciendo y hoy día la mayor parte del tráfico web se lleva a cabo a través de las CDN, incluido el tráfico de los principales sitios como Facebook, Netflix y Amazon. Una CDN configurada correctamente también puede ayudar a proteger sitios web contra algunos ataques maliciosos comunes, como los ataques de denegación de servicio distribuido (DDOS). Fuente: https://www.cloudflare.com/es-es/learning/cdn/what-is-a-cdn/
+                       <br><b><span class="h2">WWW</span></b><br>
+                       WWW es un término que es utilizado para referirse a la World Wide Web, también conocida como Internet, la red de redes o simplemente la Web. Básicamente, la World Wide Web está compuesta de todos los sitios web que existen en el mundo y que están interconectados a través de ella. Un poco más técnicamente hablando, la World Wide Web es la mayor red del mundo, y mediante la cual se pueden distribuir documentos como imágenes, escritos, video y audio, además de muchos otros tipos de información a todos aquellos dispositivos que se encuentren interconectados a ella, incluyendo computadoras, teléfonos móviles y otros con esa capacidad. Para ello es necesario contar con un navegador web como Internet Explorer, Google Chrome o Firefox, los que nos van a permitir navegar por todo este contenido a través de los llamados “Hiperenlaces”, utilizados en todas las páginas y que básicamente es un acceso a esta información ubicada en otra parte del mundo. Fuente: https://tecnologia-facil.com/que-es/que-es-www/
+                       <br><b><span class="h2">¿Qué es DOM?</span></b><br>
+                       El modelo de objeto de documento (DOM) es una interfaz de programación para documentos HTML (lenguaje de marcado de hipertexto) y XML (lenguaje de marcado extensible). Define la estructura lógica de los documentos y la forma en que se accede y manipula un documento. Nota: Se llama estructura lógica porque DOM no especifica ninguna relación entre objetos. DOM es una forma de representar la página web de una manera jerárquica estructurada para que sea más fácil para los programadores y usuarios navegar por el documento. Con DOM, podemos acceder y manipular fácilmente etiquetas, ID, clases, atributos o elementos de HTML utilizando comandos o métodos proporcionados por el objeto del documento. Usando DOM, JavaScript obtiene acceso a HTML y CSS de la página web y también puede agregar comportamiento a los elementos HTML. así que, básicamente, Document Object Model es una API que representa e interactúa con documentos HTML o XML.
+                       <br><b><span class="h2">¿Por qué se requiere DOM?</span></b><br>
+                       HTML se usa para estructurar las páginas web y Javascript se usa para agregar comportamiento a nuestras páginas web. Cuando se carga un archivo HTML en el navegador, javascript no puede entender el documento HTML directamente. Entonces, se crea un documento correspondiente (DOM). DOM es básicamente la representación del mismo documento HTML pero en un formato diferente con el uso de objetos. Javascript interpreta DOM fácilmente, es decir, javascript no puede entender las etiquetas en el documento HTML pero puede entender el objeto h1 en DOM. Ahora, Javascript puede acceder a cada uno de los objetos (h1, p, etc) usando diferentes funciones. Estructura de DOM: DOM se puede considerar como un árbol o un bosque (más de un árbol). El término modelo de estructura se utiliza a veces para describir la representación en forma de árbol de un documento. Cada rama del árbol termina en un nodo, y cada nodo contiene objetos Los detectores de eventos se pueden agregar a los nodos y activarse cuando ocurre un evento determinado. Una propiedad importante de los modelos de estructura DOM es el isomorfismo estructural: si se utilizan dos implementaciones DOM cualesquiera para crear una representación del mismo documento, crearán el mismo modelo de estructura, precisamente con los mismos objetos y relaciones. Fuente: https://www.geeksforgeeks.org/dom-document-object-model/
+
+                   </span></p>
+                   <button onclick="myFunction()" id="myBtn" class="btn-more">Read more</button>
+               </div>
+            </div>
+        </div>
+        </div>
+        
+        <!--Copyright Information-->
+        <div class="copyright">
+            <p>&copy; 2022 <a href="https://youtu.be/gPCCYMeXin0?list=RDMM">Paola Mendoza</a></p>
+        </div>
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+                var main = document.getElementById("main");
+                var coimg = document.getElementById("coimg");
+              if (dots.style.display === "none") {
+                  dots.style.display = "inline";
+                  btnText.innerHTML = "Read more";
+                  moreText.style.display = "none";
+                  main.style.display = "flex";
+                  coimg.style.width = "350px";
+                  
+                  
+              } else {
+                  dots.style.display = "none";
+                  btnText.innerHTML = "Read less";
+                  moreText.style.display = "inline";
+                  main.style.display = "block";
+                  coimg.style.width = "100%";
+                  coimg.style.transition = "all 1s";
+                }
+        }
+        </script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>

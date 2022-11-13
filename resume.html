@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+-->
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="shortcut icon" href="images\Iconslogo\destiny-150x150.png" />
+        <link href="css/resume.css" type="text/css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Audiowide|Baloo+Tamma|Kelly+Slab|Neucha|Righteous&display=swap" rel="stylesheet">
+    <style>
+        .toggle{
+            height: 0px;
+        }
+        @media only screen and (max-width: 800px){
+            .toggle{
+                height: 50px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="toggle">
+            <span style="font-size:40px;cursor:pointer;margin-left: 10px;" onclick="openNav()" id="open">&#9776; </span>
+        </div>
+       <div id="myNav" class="navbar" style="background-color: rgba(0,0,0,0.9);">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close">&times;</a>
+          <div class="navbar-content">
+            <a href="home.html">Home</a>
+            <a href="resume.html" id="active">CV</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="entregas.html">Projects</a>
+            <a href="ejercicios.html">Exercises</a>
+          </div>
+        </div>
+        <div class="top-part">
+            <div class="back-part">
+            <div class="sign">
+               <img src="images/Iconslogo/sign1.png">
+            </div>
+            <div class="social-icons">
+               <a href="https://www.facebook.com/pao.m.328" target="_blank"><img src="images/Iconslogo/facebook-32.png"></a>
+               
+               <a href="https://twitter.com/paolita328" target="_blank"><img src="images/Iconslogo/twitter-32.png"></a>
+               
+               <a href="https://www.instagram.com/paom328" target="_blank"><img src="images/Iconslogo/instagram-32.png"></a>
+               
+               <a href="https://github.com/paom328" target="_blank"><img src="images/Iconslogo/github-32.png"></a>
+               
+               
+               <a href="https://www.youtube.com/channel/UCw4Ri2zRecBdak0Fn2jn5Bg" target="_blank"><img src="images/Iconslogo/youtube-32.png"></a>
+            </div>
+            <div class="down-button">
+                <a href="">
+                    <button class="btn-dwn" type="button" onclick="confirmDownload()">Download CV<i class="fa fa-download" id="dwn-icon"></i></button>
+                </a>
+            </div>
+        </div>
+        <div class="per-img"></div>
+        </div>
+        <div class="main-part">
+            <h2>Paola Mendoza</h2>
+            <div class="cv-area">
+               <div class="fieldset-cover">
+                   <fieldset>
+                  <legend>Personal Detail</legend>
+                   <div class="per-detail">
+                   <table class="tb-left">
+                       <tr>
+                           <th>Name </th>
+                           <td> : </td>
+                           <td>Paola Mendoza</td>
+                       </tr>
+                       <tr>
+                           <th>Address </th>
+                           <td> : </td>
+                           <td>Cl 85 # 57-72, Itagui, Antioquia, Colombia</td>
+                           
+                       </tr>
+                       <tr>
+                           <th>Gender </th>
+                           <td> : </td>
+                           <td>Female</td>
+                           
+                       </tr>
+                       <tr>
+                           <th>Contact No</th>
+                           <td> : </td>
+                           <td>+57 304 468 0025</td>
+                           
+                       </tr>
+                       <tr>
+                           <th>Nationality</th>
+                           <td> : </td>
+                           <td>Colombian</td>
+                           
+                       </tr>
+                   </table>
+                   <table class="tb-right">
+                       <tr>
+                           <th> Age </th>
+                           <th> : </th>
+                           <td>29</td>
+                       </tr>
+                       <tr>
+                           <th> Occupation </th>
+                           <td> : </td>
+                           <td>Student - Data analyst</td>
+                       </tr>
+                       <tr>
+                           <th> DOB </th>
+                           <td> : </td>
+                           <td>04/28/93</td>
+                       </tr>
+                       <tr>
+                           <th> Email </th>
+                           <td> : </td>
+                           <td>
+                            pao.m.328@gmail.com</td>
+                       </tr>
+                       <tr>
+                           <th> Language </th>
+                           <td> : </td>
+                           <td> Spanish,English & Korean</td>
+                       </tr>
+                   </table>
+               </div>
+               </fieldset>
+               </div>
+               <div class="fieldset-cover">
+                   <fieldset>
+                   <legend>Education</legend>
+                   <div class="edu-detail">
+                       <table>
+                          <caption>Education</caption>
+                           <tr>
+                               <th>Primary Level</th>
+                               <td>:</td>
+                               <td>Comfacor (2003)</td>
+                           </tr>                         
+                           <tr>
+                               <th>High School Level</th>
+                               <td>:</td>
+                               <td>Simon Bolivar (2009)</td>
+                           </tr>
+                           <tr>
+                               <th>College</th>
+                               <td>:</td>
+                               <td>Tecnologia en desarrollo de sistemas de inferomacion (U) (2019 - 2023)</td>
+                           </tr>
+                       </table>
+                   </div>
+               </fieldset>
+               </div>
+               <div class="fieldset-cover">
+                   <fieldset>
+                   <legend>Work Experience</legend>
+                   <div class="work-detail">
+                       <table class="tbl-work">
+                          <caption>Work Experience</caption>
+                           <tr>
+                               <th>Currently, I'm working at Stanley Black and Decker as a reporting data analyst  
+                                  </th>
+                           </tr>
+                       </table>
+                   </div>
+               </fieldset>
+               </div>
+                <div class="skill-section" id="skill-section">
+                   <h2>My Skills & Abilities</h2>
+                    <div class="skill-part">
+                    <div class="prgm-skill">
+                    <h2>Programming</h2>
+                        <p>Java</p>
+                        <div class="container-skill">
+                          <div class="skills java">80%</div>
+                        </div>
+                        
+                        <p>Phyton</p>
+                        <div class="container-skill">
+                          <div class="skills dart">60%</div>
+                        </div>
+                        <p>Javascript</p>
+                        <div class="container-skill">
+                          <div class="skills js">70%</div>
+                        </div>
+                        <p>PHP</p>
+                        <div class="container-skill">
+                          <div class="skills php">50%</div>
+                        </div>
+                        <p>MySQL</p>
+                        <div class="container-skill">
+                          <div class="skills sql">50%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="design-skill">
+                       <h2>Designing</h2>
+                        <p>HTML</p>
+                        <div class="container-skill">
+                          <div class="skills html">90%</div>
+                        </div>
+                        
+                        <p>CSS</p>
+                        <div class="container-skill">
+                          <div class="skills css">80%</div>
+                        </div>
+                        <p>Rhino 6</p>
+                        <div class="container-skill">
+                          <div class="skills bootstrap">70%</div>
+                        </div>
+                        <p>Photoshop</p>
+                        <div class="container-skill">
+                          <div class="skills photoshop">75%</div>
+                        </div>
+                        <p>Premiere Pro</p>
+                        <div class="container-skill">
+                          <div class="skills prepro">50%</div>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+            </div>
+        </div>
+        <!--Copyright Information-->
+        <div class="copyright">
+            <p>&copy; 2022 <a href="https://youtu.be/gPCCYMeXin0?list=RDMM">Paola Mendoza</a></p>
+        </div>
+        <script>
+            function confirmDownload(){
+                alert("Download is preparing & will begin shortly...");
+            }
+        </script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
