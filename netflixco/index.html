@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Netflix Colombia by Paola Mendoza</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/banner.css" />
+		<link rel="stylesheet" href="./css/form.css" />
+		<link rel="stylesheet" href="./css/story.css" />
+		<link rel="stylesheet" href="./css/faq.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
+		<link rel="stylesheet" href="./css/responsive.css" />
+		<link rel="icon" href="./media/Netflix_logo.png">
+	</head>
+	<body>
+		<header class="header">
+			<a class="header__logo" href="#">
+				<img src="./media/netflix.svg" alt="" />
+			</a>
+
+			<a class="sign__in__btn primary--btn" href="#"> Sign in </a>
+		</header>
+
+		<section class="banner__section">
+			<img class="banner" src="./media//banner.jpg" alt="" />
+			<div class="banner__overlay"></div>
+
+			<div class="banner__content">
+				<h1 class="banner__title">Unlimited movies, TV shows, and more.</h1>
+				<h2 class="banner__subtitle">Watch anywhere. Cancel anytime.</h2>
+
+				<h4 class="form__cta">
+					Ready to watch? Enter your email to create or restart your membership.
+				</h4>
+
+				<form class="membership__form">
+					<div class="membership__input__container">
+						<input class="membership__input" type="email" />
+						<label class="membership__placeholder" for="email">Email address</label>
+					</div>
+					<label class="membership__input__message"> </label>
+
+					<button class="membership__btn primary--btn" type="submit">
+						Get started
+					</button>
+				</form>
+			</div>
+		</section>
+
+		<hr class="section__divider" />
+
+		<div class="story__card__container">
+			<section class="story__card">
+				<div class="story__card__left">
+					<h1>Enjoy on your TV.</h1>
+
+					<h2>
+						Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+					</h2>
+				</div>
+
+				<div class="story__card__right">
+					<div class="tv__anime__container">
+						<img class="tv__img" src="media/tv.png" alt="" />
+
+						<video
+							autoplay
+							muted
+							loop
+							class="tv__anime"
+							src="media/tv_animation.m4v"
+						></video>
+					</div>
+				</div>
+			</section>
+
+			<hr class="section__divider" />
+
+			<section class="story__card">
+				<div class="story__card__left">
+					<h1>Download your shows to watch offline.</h1>
+
+					<h2>Save your favorites easily and always have something to watch.</h2>
+				</div>
+
+				<div class="story__card__right">
+					<div class="download__container">
+						<img src="media/mobile.jpg" alt="" />
+
+						<div class="download__animation__container">
+							<img class="poster" src="media/boxshot.png" alt="" />
+
+							<div class="text__container">
+								<p class="title">Stranger Things</p>
+								<p class="downloading">Downloading...</p>
+							</div>
+
+							<img src="media/download-icon.gif" class="download__gif" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr class="section__divider" />
+
+			<section class="story__card">
+				<div class="story__card__left">
+					<h1>Watch anywhere. Cancel anytime.</h1>
+					<h2>
+						Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+					</h2>
+				</div>
+				<div class="story__card__right">
+					<img class="tv2__image" src="media/tv2.png" alt="" />
+
+				</div>
+			</section>
+
+			<hr class="section__divider" />
+
+			<section class="story__card">
+				<div class="story__card__left">
+					<h1>Create profiles for kids.</h1>
+					<h2>
+						Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
+					</h2>
+				</div>
+
+				<div class="story__card__right">
+					<img class="kids__image" src="media/kids.png" alt="" />
+				</div>
+			</section>
+
+			<hr class="section__divider" />
+		</div>
+
+		<section class="faq">
+			<h2 class="faq__title">Frequently Asked Questions</h2>
+
+			<ul class="accordion__list">
+				<li class="accordion">
+					<button class="accordion__question">
+						What is Netflix?
+					</button>
+
+					<p class="accordion__answer">
+						Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+						<br>
+						<br>You can watch as much as you want, whenever you want without a single commercial - all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+					</p>
+				</li>
+
+				<li class="accordion">
+					<button class="accordion__question">
+						How much does Netflix cost?
+					</button>
+
+					<p class="accordion__answer">
+						Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from COP16,900 to COP38,900 a month. No extra costs, no contracts.
+					</p>
+				</li>
+
+				<li class="accordion">
+					<button class="accordion__question">
+						Where can I watch?
+					</button>
+
+					<p class="accordion__answer">
+						Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+						<br>
+						<br>You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+					</p>
+				</li>
+
+				<li class="accordion">
+					<button class="accordion__question">
+						How do I cancel?
+					</button>
+
+					<p class="accordion__answer">
+						Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees - start or stop your account anytime.
+					</p>
+				</li>
+
+				<li class="accordion">
+					<button class="accordion__question">
+						What can I whatch on Netflix?
+					</button>
+
+					<p class="accordion__answer">
+						Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+					</p>
+				</li>
+
+				<li class="accordion">
+					<button class="accordion__question">
+						Is Netflix good for kids?
+					</button>
+
+					<p class="accordion__answer">
+						The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
+						<br>
+						<br>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+					</p>
+				</li>
+			</ul>
+
+			<h4 class="form__cta">
+				Ready to watch? Enter your email to create or restart your membership.
+			</h4>
+
+			<form class="membership__form">
+				<div class="membership__input__container">
+					<input class="membership__input" type="email" />
+					<label class="membership__placeholder" for="email">Email address</label>
+				</div>
+				<label class="membership__input__message"> </label>
+
+				<button class="membership__btn primary--btn" type="submit">
+					Get started
+				</button>
+		</section>
+
+		<hr class="section__divider" />
+
+		<footer class="footer">
+			<a class="footer__link contact--link" href="#"> Questions? Call 01 800 917 1563 </a>
+
+			<div class="footer__link__container">
+				<a class="footer__link" href="#">FAQ</a>
+				<a class="footer__link" href="#">Help Center</a>
+				<a class="footer__link" href="#">Account</a>
+				<a class="footer__link" href="#">Media Center</a>
+				<a class="footer__link" href="#">Investor Relations</a>
+				<a class="footer__link" href="#">Jobs</a>
+				<a class="footer__link" href="#">Redeem Gift Cards</a>
+				<a class="footer__link" href="#">Buy Gift Cards</a>
+				<a class="footer__link" href="#">Ways to Watch</a>
+				<a class="footer__link" href="#">Terms of Use</a>
+				<a class="footer__link" href="#">Privacy</a>
+				<a class="footer__link" href="#">Cookie Preferences</a>
+				<a class="footer__link" href="#">Corporate Information</a>
+				<a class="footer__link" href="#">Contact us</a>
+				<a class="footer__link" href="#">Speed Test</a>
+				<a class="footer__link" href="#">Legal Notices</a>
+				<a class="footer__link" href="#">Only on netflix</a>
+			</div>
+		</footer>
+		<script src="js/index.js"></script>
+	</body>
+</html>
